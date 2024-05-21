@@ -16,8 +16,8 @@ const Hero = () => {
         <p className="text-xl font-montserrat text-coral-red">
           Our Summmer Collection
         </p>
-        <h1 className="mt-10 text-8xl font-palanquin max-sm:text-[72px]max-sm:leading-[82] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+        <h1 className="mt-10 text-8xl max-sm:text-4xl font-palanquin max-sm:text-[72px]max-sm:leading-[82] font-bold ">
+          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10 max-lg:z-0">
             The New Arrival
           </span>
           <br />
@@ -29,7 +29,7 @@ const Hero = () => {
         </p>
         <Button label="Shop Now" iconUrl={arrowRight} />
 
-        <div className="flex justify-normal items-start flex-wrap w-full mt-20 gap-16">
+        <div className="flex max-sm:flex-col max-sm:items-center justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
             <div key={stat.label}>
               <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
